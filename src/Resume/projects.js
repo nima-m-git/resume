@@ -1,7 +1,7 @@
 const toDo = {
   title: 'Todo Notebook',
   description:
-    'Single-page todo app built with React; Users can create and modify tasks sorted into groups in personal notebook',
+    'Single-page todo app built with React, animations with Framer-Motion; Users can create and modify tasks sorted into groups in personal notebook',
   demoUrl: 'https://nima-m-git.github.io/to-do-react/',
   sourceUrl: 'https://github.com/nima-m-git/to-do-react',
   tags: ['javascript', 'react', 'sass', 'html5', 'css3', 'git'],
@@ -37,7 +37,7 @@ const blog = {
   title: 'Blog API',
   dangerousDescription: {
     __html:
-      'Client sides for <a href="https://thawing-sierra-41526.herokuapp.com/" target="_blank" rel="noreferrer">Users</a> and for <a href="https://desolate-headland-75993.herokuapp.com/" target="_blank" rel="noreferrer">Admins</a> built with React, Sass, RESTful API Backend with Node, Express, Mongo; Authenticated bloggers can post, edit, publish posts, users view and comment',
+      'Portals for <a href="https://thawing-sierra-41526.herokuapp.com/" target="_blank" rel="noreferrer">Users</a> and <a href="https://desolate-headland-75993.herokuapp.com/" target="_blank" rel="noreferrer">Admins</a> built with React, Sass. RESTful API Backend with Node, Express, Mongo; Authenticated bloggers can post, edit, publish posts, while users can view and comment',
   },
   sourceUrls: [
     {

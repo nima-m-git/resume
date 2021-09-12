@@ -35,8 +35,8 @@ export const professionalExperience = [
     endDate: new Date(),
     description: '',
     responsibilities: [
-      'Built, designed, and modified Investor and Corporate websites for publically traded companies',
-      'Analyzed and implemented unique solutions for issues and improvements to UX/UI design, accessibility features, code structure, refactored widgets and stylesheets',
+      'Built and designed Investor and Corporate websites for publically traded companies',
+      'Analyzed, provided suggestions, and implemented innovative solutions for issues and improvements related to: UX/UI design, process automation, accessibility features, code structure, refactored widgets and stylesheets, onboarding process, CMS documentation',
     ],
   },
   {
@@ -138,9 +138,3 @@ export const skillsGroup = [
   ['Python', 'Django', 'PostgreSQL'],
   ['AWS', 'Firebase', 'Git', 'Webpack', 'Postman'],
 ];
-export const summary = `
-      I enjoy producing all kinds of technical solutions, never refusing a problem to solve. \n
-
-      Constantly learning, building, fixing, improving, with a passion for optimizing efficiency efficiency.  
-
-      Strongly value quality code, modern tools, best practices, and solid architecture.`;

@@ -10,7 +10,6 @@ import {
   professionalExperience,
   sampleProjects,
   skillsGroup,
-  summary,
 } from './data';
 
 import styles from './Resume.module.scss';
@@ -23,12 +22,7 @@ export const Resume = () => (
         <div className={styles.title}>Full Stack Developer</div>
       </div>
       <div className={styles.contactInfo}>
-        <ContactLink
-          link="http://nima-m.me/"
-          className={styles.portfolioLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <ContactLink link="http://nima-m.me/" className={styles.portfolioLink}>
           www.nima-m.me
         </ContactLink>
 
@@ -64,7 +58,14 @@ export const Resume = () => (
       <div className={styles.thingyLeft}>
         <section className={styles.section}>
           <div className={styles.heading}>Personal Summary</div>
-          <p>{summary}</p>
+          <p>
+            I enjoy producing all kinds of technical solutions. Never refuse to
+            solve a problem.
+            <br></br>Constantly learning, building, fixing, improving, with a
+            passion for optimizing efficiency.
+            <br></br>Strongly value quality code, modern tools, best practices,
+            and solid architecture.
+          </p>
         </section>
         <section className={styles.workExperience}>
           <div className={styles.heading}>Professional Experience</div>
@@ -115,13 +116,20 @@ export const Resume = () => (
         <div className={styles.moreSamples}>
           {' '}
           More sample projects available on my
-          <a href="http://www.nima-m.me" className={styles.moreSamplesLink}>
+          <a
+            href="http://www.nima-m.me"
+            className={styles.moreSamplesLink}
+            target="_blank"
+            rel="noreferrer"
+          >
             <u> Portfolio</u>
           </a>
           {', '}
           <a
             href="https://codesandbox.io/u/nima-m-git"
             className={styles.moreSamplesLink}
+            target="_blank"
+            rel="noreferrer"
           >
             <u>Codesandbox</u>
           </a>
@@ -129,8 +137,20 @@ export const Resume = () => (
           <a
             href="https://github.com/nima-m-git"
             className={styles.moreSamplesLink}
+            target="_blank"
+            rel="noreferrer"
           >
             <u>Github</u>
+          </a>
+          <br></br>
+          {"Like this resume? Check out it's "}
+          <a
+            href="https://github.com/nima-m-git/resume"
+            className={styles.moreSamplesLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <u>code</u>
           </a>
         </div>
       </div>
@@ -143,14 +163,6 @@ export const Resume = () => (
             key={index}
           />
         ))}
-      </div>
-      <div className={styles.samples}>
-        <a
-          href="https://github.com/nima-m-git"
-          className={styles.moreSamplesLink}
-        >
-          <u>Github</u>
-        </a>
       </div>
     </div>
   </div>

@@ -10,7 +10,7 @@ export const ContactLink = ({
   link,
 }) => (
   <div className={classNames(styles.container, className)}>
-    <a className={styles.link} href={link}>
+    <a className={styles.link} href={link} target="_blank" rel="noreferrer">
       {children}
 
       <i className={classNames(styles.icon, iconPrefix, icon)} />
