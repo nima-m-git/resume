@@ -1,0 +1,29 @@
+@import 'sass/variables';
+
+.container {
+  margin-left: auto;
+  display: flex;
+}
+
+.link {
+  align-items: center;
+  margin-left: auto;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.icon {
+  color: $primaryColor;
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  text-align: right;
+  font-size: 20px;
+  opacity: 0.9;
+  text-decoration: none;
+  transform: translateY(2px);
+  text-align: center;
+}
