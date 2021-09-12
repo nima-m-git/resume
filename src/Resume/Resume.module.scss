@@ -1,0 +1,157 @@
+@import 'sass/variables';
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  font: 14px $fontFamilyDefault;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1060px;
+}
+
+.header {
+  display: flex;
+  color: $black900;
+  margin: 0 0 0.7rem;
+}
+
+.fullName {
+  font: 400 60px/60px $fontFamilyDisplay;
+  color: $black900;
+}
+
+.title {
+  font: 500 18px/24px $fontFamilyDefault;
+}
+
+.heading {
+  // font: 400 20px/24px $fontFamilyDisplay;
+  color: $primaryColor;
+  color: $black300;
+  // font: 800 16px $fontFamilyDisplay;
+  font: 800 16px $fontFamilyDefault;
+  margin: 0 0 0.5rem;
+}
+
+.contactInfo {
+  margin-left: auto;
+  line-height: 1.5;
+  text-align: right;
+  color: $black500;
+}
+
+.contactLink {
+  color: $black600;
+}
+
+.portfolioLink {
+  @extend .contactLink;
+
+  color: $linkColor;
+}
+
+.phoneNumber {
+  @extend .contactLink;
+
+  text-decoration: none;
+}
+
+.section {
+  margin: 0 0 1.5rem;
+}
+
+.personalSummary {
+  @extend .section;
+
+  margin-top: -1rem;
+}
+
+// sample project stuff
+.sampleProjects {
+  display: flex;
+  align-items: stretch;
+  margin: 0 -0.5rem;
+}
+
+.sampleProject {
+  flex: 1;
+
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
+
+.secondaryBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .heading {
+    margin: 0;
+    height: fit-content;
+  }
+}
+
+.moreSamples {
+  text-align: right;
+  margin: 0.75rem 0;
+  width: fit-content;
+
+  a {
+    text-decoration: none;
+    color: $black800;
+
+    &:hover {
+      text-decoration: underline;
+      color: $linkColor;
+    }
+  }
+
+  u {
+    text-decoration: underline;
+  }
+}
+// end sample project stuff
+
+.thingy {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.thingyRight {
+  // width: 320px;
+  // margin-left: 3rem;
+  width: 360px;
+  margin-left: 1rem;
+  text-align: end;
+}
+
+.thingyLeft {
+  max-width: 75%;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90%;
+}
+
+.skillsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 0.8em;
+}
+
+.skill {
+  margin: 0.6em 0.4em;
+  background: whitesmoke;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
